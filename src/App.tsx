@@ -1,6 +1,52 @@
-import { Github, Linkedin, Mail, Phone, MapPin, ExternalLink, Code, Brain, Database, Globe, Sparkles, Award } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, MapPin, ExternalLink, Code, Brain, Database, Globe, Sparkles, Award, Download, MessageCircle, Send } from 'lucide-react';
+import { useState, FormEvent } from 'react';
 
 function App() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/zaidlaiq99@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: `New Portfolio Contact from ${formData.name}`
+        })
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/923218712730', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-slate-950 relative overflow-hidden">
       <div className="fixed inset-0 bg-gradient-to-br from-slate-950 via-blue-950/20 to-slate-950 pointer-events-none"></div>
@@ -32,8 +78,12 @@ function App() {
               Passionate about solving real-world problems through innovative AI/ML solutions and full-stack development.
               Currently pursuing BS in Artificial Intelligence with hands-on experience in machine learning, natural language processing, and web technologies.
             </p>
-            <div className="flex gap-6 justify-center">
-              <a href="https://github.com/zaid783" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.5)]">
+            <div className="flex flex-wrap gap-4 justify-center">
+              <a href="/Zaid_Ahmed_CV.pdf" download className="group flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.5)]">
+                <Download size={20} className="group-hover:animate-bounce" />
+                Download CV
+              </a>
+              <a href="https://github.com/zaid783" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 px-8 py-4 glass-effect text-cyan-400 rounded-lg border-2 border-cyan-500/50 hover:border-cyan-400 hover:bg-cyan-500/10 transition-all duration-300 transform hover:scale-105">
                 <Github size={20} className="group-hover:rotate-12 transition-transform duration-300" />
                 GitHub
               </a>
@@ -401,16 +451,21 @@ function App() {
         </section>
 
         <section id="contact" className="py-20 relative">
-          <div className="max-w-3xl mx-auto px-6 text-center">
-            <h3 className="text-5xl font-serif gradient-text mb-8 font-bold">Get In Touch</h3>
-            <p className="text-lg text-slate-300 mb-12 leading-relaxed">
+          <div className="max-w-4xl mx-auto px-6">
+            <h3 className="text-5xl font-serif gradient-text mb-8 text-center font-bold">Get In Touch</h3>
+            <p className="text-lg text-slate-300 mb-12 text-center leading-relaxed">
               Interested in collaborating or have a project in mind? Feel free to reach out.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+
+            <div className="flex flex-wrap gap-4 justify-center mb-16">
               <a href="mailto:zaidlaiq99@gmail.com" className="group flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.5)] justify-center">
                 <Mail size={20} className="group-hover:rotate-12 transition-transform duration-300" />
                 Email Me
               </a>
+              <button onClick={handleWhatsAppClick} className="group flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-lg hover:from-green-400 hover:to-emerald-500 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(34,197,94,0.5)] justify-center">
+                <MessageCircle size={20} className="group-hover:rotate-12 transition-transform duration-300" />
+                WhatsApp
+              </button>
               <a href="https://www.linkedin.com/in/zaid-ahmed-b56a33218/" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 px-8 py-4 glass-effect text-cyan-400 rounded-lg border-2 border-cyan-500/50 hover:border-cyan-400 hover:bg-cyan-500/10 transition-all duration-300 transform hover:scale-105 justify-center">
                 <Linkedin size={20} className="group-hover:rotate-12 transition-transform duration-300" />
                 LinkedIn
@@ -419,6 +474,62 @@ function App() {
                 <Github size={20} className="group-hover:rotate-12 transition-transform duration-300" />
                 GitHub
               </a>
+            </div>
+
+            <div className="glass-effect p-8 rounded-2xl border border-cyan-500/20">
+              <h4 className="text-2xl font-serif text-cyan-400 mb-6 text-center">Send Me a Message</h4>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <label htmlFor="name" className="block text-slate-300 mb-2">Your Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    required
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    className="w-full px-4 py-3 bg-slate-900/50 border border-cyan-500/30 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors duration-300"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-slate-300 mb-2">Your Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    required
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    className="w-full px-4 py-3 bg-slate-900/50 border border-cyan-500/30 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors duration-300"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-slate-300 mb-2">Your Message</label>
+                  <textarea
+                    id="message"
+                    required
+                    rows={5}
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    className="w-full px-4 py-3 bg-slate-900/50 border border-cyan-500/30 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors duration-300 resize-none"
+                    placeholder="Enter your message"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.5)] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                >
+                  <Send size={20} className={isSubmitting ? 'animate-pulse' : ''} />
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                </button>
+                {submitStatus === 'success' && (
+                  <p className="text-green-400 text-center">Message sent successfully! I'll get back to you soon.</p>
+                )}
+                {submitStatus === 'error' && (
+                  <p className="text-red-400 text-center">Failed to send message. Please try again or email me directly.</p>
+                )}
+              </form>
             </div>
           </div>
         </section>
