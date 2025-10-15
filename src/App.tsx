@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, Phone, MapPin, ExternalLink, Code, Brain, Database, Globe, Sparkles, Award, Download, MessageCircle, Send } from 'lucide-react';
 import { useState, FormEvent } from 'react';
+import CustomCursor from './CustomCursor';
 
 function App() {
   const [formData, setFormData] = useState({
@@ -49,6 +50,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-950 relative overflow-hidden">
+      <CustomCursor />
       <div className="fixed inset-0 bg-gradient-to-br from-slate-950 via-blue-950/20 to-slate-950 pointer-events-none"></div>
       <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent pointer-events-none"></div>
 
