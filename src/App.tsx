@@ -311,6 +311,7 @@ function App() {
                     <div className="max-w-5xl mx-auto px-6">
                         <h3 className="text-5xl font-serif gradient-text mb-16 text-center font-bold">Featured Projects</h3>
                         <div className="grid md:grid-cols-2 gap-8">
+
                             <div className="glass-effect rounded-2xl p-8 border border-cyan-500/20 hover:border-cyan-500/60 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.4)] group">
                                 <div className="flex items-center gap-4 mb-6">
                                     <Brain className="text-cyan-400 group-hover:scale-110 transition-transform duration-300" size={32} />
@@ -388,7 +389,6 @@ function App() {
                                 </a>
                             </div>
 
-
                             <div className="glass-effect rounded-2xl p-8 border border-cyan-500/20 hover:border-cyan-500/60 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.4)] group">
                                 <div className="flex items-center gap-4 mb-6">
                                     <Database className="text-cyan-400 group-hover:scale-110 transition-transform duration-300" size={32} />
@@ -401,7 +401,7 @@ function App() {
                                     <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Python</span>
                                     <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">TensorFlow / Keras</span>
                                     <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Streamlit</span>
-                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Matplotlib </span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Matplotlib</span>
                                 </div>
                                 <a href="https://github.com/zaid783/AI-Robot-Path-Planner-DQN-" className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-all duration-300 group-hover:gap-4">
                                     <ExternalLink size={18} />
@@ -419,17 +419,15 @@ function App() {
                                 </p>
                                 <div className="flex gap-2 flex-wrap mb-6">
                                     <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Python</span>
-                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">scikit-learn/ seaborn/ Pandas</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">scikit-learn / seaborn / Pandas</span>
                                     <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Streamlit</span>
-                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Matplotlib </span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Matplotlib</span>
                                 </div>
                                 <a href="https://github.com/zaid783/AutoML-Web-Trainer" className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-all duration-300 group-hover:gap-4">
                                     <ExternalLink size={18} />
                                     View Project
                                 </a>
                             </div>
-
-
 
                             <div className="glass-effect rounded-2xl p-8 border border-cyan-500/20 hover:border-cyan-500/60 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.4)] group">
                                 <div className="flex items-center gap-4 mb-6">
@@ -440,13 +438,13 @@ function App() {
                                     A complete full-stack application built with NestJS backend and Angular frontend. This project features a comprehensive user management system with file upload functionality.
                                 </p>
                                 <div className="flex gap-2 flex-wrap mb-6">
-                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">NestJS - Progressive Node.js framework for building APIs</span>
-                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">MikroORM - TypeScript ORM for database operations</span>
-                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">PostgreSQL - Powerful open-source relational database</span>
-                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Multer - File upload handling </span>
-                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Swagger - API documentation and testing </span>
-                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">TypeScript - Type-safe JavaScript </span>
-                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Angular - Web application framework </span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">NestJS</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">MikroORM</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">PostgreSQL</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Multer</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Swagger</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">TypeScript</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Angular</span>
                                 </div>
                                 <a href="https://github.com/zaid783/nestjs-angular-user-crud" className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-all duration-300 group-hover:gap-4">
                                     <ExternalLink size={18} />
@@ -454,6 +452,74 @@ function App() {
                                 </a>
                             </div>
 
+                            {/* NEW PROJECTS */}
+
+                            <div className="glass-effect rounded-2xl p-8 border border-cyan-500/20 hover:border-cyan-500/60 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.4)] group">
+                                <div className="flex items-center gap-4 mb-6">
+                                    <Brain className="text-cyan-400 group-hover:scale-110 transition-transform duration-300" size={32} />
+                                    <h4 className="text-2xl font-semibold text-white group-hover:text-cyan-300 transition-colors duration-300">ANPR – License Plate Recognition System</h4>
+                                </div>
+                                <p className="text-slate-300 mb-6 leading-relaxed">
+                                    Engineered a real-time Automatic Number Plate Recognition system using YOLOv8 for plate detection and optimized EasyOCR for accurate character recognition. Built a video processing pipeline with Ngrok and automated data logging via Firebase/Cloudinary, with an interactive dashboard for real-time monitoring and analytics.
+                                </p>
+                                <div className="flex gap-2 flex-wrap mb-6">
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Python</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">YOLOv8</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">EasyOCR</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Next.js</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Firebase</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">ApexCharts</span>
+                                </div>
+                            </div>
+
+                            <div className="glass-effect rounded-2xl p-8 border border-cyan-500/20 hover:border-cyan-500/60 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.4)] group">
+                                <div className="flex items-center gap-4 mb-6">
+                                    <Database className="text-cyan-400 group-hover:scale-110 transition-transform duration-300" size={32} />
+                                    <h4 className="text-2xl font-semibold text-white group-hover:text-cyan-300 transition-colors duration-300">MRP – Manufacture Resource Planner</h4>
+                                </div>
+                                <p className="text-slate-300 mb-6 leading-relaxed">
+                                    Built a full-scale MRP platform with six modules managing inventory, manufacturing, and sales operations. Features RBAC, real-time sync, OAuth authentication, and complex database workflows for products, orders, and inventory processes.
+                                </p>
+                                <div className="flex gap-2 flex-wrap mb-6">
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">React</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Vite</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Material-UI</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Supabase</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">PostgreSQL</span>
+                                </div>
+                            </div>
+
+                            <div className="glass-effect rounded-2xl p-8 border border-cyan-500/20 hover:border-cyan-500/60 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.4)] group">
+                                <div className="flex items-center gap-4 mb-6">
+                                    <Code className="text-cyan-400 group-hover:scale-110 transition-transform duration-300" size={32} />
+                                    <h4 className="text-2xl font-semibold text-white group-hover:text-cyan-300 transition-colors duration-300">SCM – Supply Chain Management System</h4>
+                                </div>
+                                <p className="text-slate-300 mb-6 leading-relaxed">
+                                    Designed and optimized a Supply Chain Management system to streamline business operations and improve efficiency. Integrated end-to-end workflows covering procurement, inventory tracking, and logistics as part of a full-stack enterprise solution.
+                                </p>
+                                <div className="flex gap-2 flex-wrap mb-6">
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">React</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">NestJS</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">PostgreSQL</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">REST APIs</span>
+                                </div>
+                            </div>
+
+                            <div className="glass-effect rounded-2xl p-8 border border-cyan-500/20 hover:border-cyan-500/60 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_40px_rgba(34,211,238,0.4)] group">
+                                <div className="flex items-center gap-4 mb-6">
+                                    <Brain className="text-cyan-400 group-hover:scale-110 transition-transform duration-300" size={32} />
+                                    <h4 className="text-2xl font-semibold text-white group-hover:text-cyan-300 transition-colors duration-300">AI Chatbot – Automated Communication System</h4>
+                                </div>
+                                <p className="text-slate-300 mb-6 leading-relaxed">
+                                    Developed an AI-powered chatbot for automated communication, enabling intelligent, context-aware responses for business use cases. Integrated into production systems to handle real-time user queries and streamline communication workflows.
+                                </p>
+                                <div className="flex gap-2 flex-wrap mb-6">
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Python</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">AI / NLP</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">REST APIs</span>
+                                    <span className="px-4 py-2 bg-cyan-500/20 text-cyan-300 text-sm rounded-full border border-cyan-500/30">Next.js</span>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
