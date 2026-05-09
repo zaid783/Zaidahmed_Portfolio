@@ -149,7 +149,7 @@ function App() {
                             Currently pursuing BS in Artificial Intelligence with hands-on experience in machine learning, natural language processing, and web technologies.
                         </p>
                         <div className="flex flex-wrap gap-4 justify-center">
-                            <a href="/Zaid_Ahmed_Resume.pdf" download className="group flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.5)]">
+                            <a href="/Zaid-Ahmed-Resume.pdf" download className="group flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.5)]">
                                 <Download size={20} className="group-hover:animate-bounce" />
                                 Download CV
                             </a>
@@ -219,7 +219,7 @@ function App() {
                                         <h4 className="text-2xl font-semibold text-white mb-2">Software Developer</h4>
                                         <p className="text-cyan-400">MISL</p>
                                     </div>
-                                    <span className="text-slate-400 text-sm bg-slate-800/50 px-4 py-2 rounded-full">Feeb 2026 - Present</span>
+                                    <span className="text-slate-400 text-sm bg-slate-800/50 px-4 py-2 rounded-full">Feb 2026 - Present</span>
                                 </div>
                                 <ul className="space-y-3 text-slate-300">
                                     <li className="flex gap-3 hover:text-cyan-300 transition-colors duration-300">
@@ -529,64 +529,69 @@ function App() {
                     <div className="max-w-5xl mx-auto px-6">
                         <h3 className="text-5xl font-serif gradient-text mb-16 text-center font-bold">Skills & Expertise</h3>
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
                             <div className="glass-effect p-6 rounded-2xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] group">
                                 <h4 className="text-xl font-semibold text-white mb-4 flex items-center gap-3 group-hover:text-cyan-300 transition-colors duration-300">
                                     <Code size={24} className="text-cyan-400 group-hover:rotate-12 transition-transform duration-300" />
                                     Programming
                                 </h4>
                                 <ul className="space-y-2 text-slate-300">
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Python</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">JavaScript</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">TypeScript</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🐍 Python</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🌐 JavaScript</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🔷 TypeScript</li>
                                 </ul>
                             </div>
+
                             <div className="glass-effect p-6 rounded-2xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] group">
                                 <h4 className="text-xl font-semibold text-white mb-4 flex items-center gap-3 group-hover:text-cyan-300 transition-colors duration-300">
                                     <Globe size={24} className="text-cyan-400 group-hover:rotate-12 transition-transform duration-300" />
                                     Web Technologies
                                 </h4>
                                 <ul className="space-y-2 text-slate-300">
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">HTML5 & CSS3</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Angular</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">React</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Fast API | Rest API</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Next.Js | Node.Js</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Nest JS</li>
-
-
-
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🎨 HTML5 & CSS3</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🅰️ Angular</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">⚛️ React</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">▲ Next.js</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🟢 Node.js</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🪺 NestJS</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">⚡ REST & Fast API</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🎭 Material-UI</li>
                                 </ul>
                             </div>
+
                             <div className="glass-effect p-6 rounded-2xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] group">
                                 <h4 className="text-xl font-semibold text-white mb-4 flex items-center gap-3 group-hover:text-cyan-300 transition-colors duration-300">
                                     <Brain size={24} className="text-cyan-400 group-hover:rotate-12 transition-transform duration-300" />
-                                    AI/ML
+                                    AI / ML
                                 </h4>
                                 <ul className="space-y-2 text-slate-300">
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">TensorFlow</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Scikit-learn</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">NLP</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Computer Vision</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Swarm Intelligence</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Yolo </li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">DQN</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🧠 TensorFlow & Keras</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">📊 Scikit-learn</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🐼 Pandas & NumPy</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">💬 NLP</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">👁️ Computer Vision</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🎯 YOLOv8</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🤖 Deep Q-Network (DQN)</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🐝 Swarm Intelligence</li>
                                 </ul>
                             </div>
+
                             <div className="glass-effect p-6 rounded-2xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] group">
                                 <h4 className="text-xl font-semibold text-white mb-4 flex items-center gap-3 group-hover:text-cyan-300 transition-colors duration-300">
                                     <Database size={24} className="text-cyan-400 group-hover:rotate-12 transition-transform duration-300" />
                                     Tools & Others
                                 </h4>
                                 <ul className="space-y-2 text-slate-300">
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Git & GitHub</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Docker</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Supabase</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Firebase</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Streamlit</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Jupyter Notebook</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">PostgreSQL / SQL</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🐙 Git & GitHub</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🐳 Docker</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🗄️ PostgreSQL / SQL</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">⚡ Supabase</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🔥 Firebase</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">🎈 Streamlit</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">📓 Jupyter Notebook</li>
                                 </ul>
                             </div>
+
                         </div>
 
                         <div className="mt-20">
@@ -596,19 +601,19 @@ function App() {
                             </h4>
                             <div className="grid md:grid-cols-2 gap-4">
                                 <div className="glass-effect p-5 rounded-xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] transform hover:scale-105">
-                                    <p className="text-slate-300 hover:text-cyan-300 transition-colors duration-300">Introduction to Python - DATACAMP</p>
+                                    <p className="text-slate-300 hover:text-cyan-300 transition-colors duration-300">🏅 Introduction to Python — DATACAMP</p>
                                 </div>
                                 <div className="glass-effect p-5 rounded-xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] transform hover:scale-105">
-                                    <p className="text-slate-300 hover:text-cyan-300 transition-colors duration-300">Intermediate Python - DATACAMP</p>
+                                    <p className="text-slate-300 hover:text-cyan-300 transition-colors duration-300">🏅 Intermediate Python — DATACAMP</p>
                                 </div>
                                 <div className="glass-effect p-5 rounded-xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] transform hover:scale-105">
-                                    <p className="text-slate-300 hover:text-cyan-300 transition-colors duration-300">Introduction to Generative AI - Google Cloud</p>
+                                    <p className="text-slate-300 hover:text-cyan-300 transition-colors duration-300">🏅 Introduction to Generative AI — Google Cloud</p>
                                 </div>
                                 <div className="glass-effect p-5 rounded-xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] transform hover:scale-105">
-                                    <p className="text-slate-300 hover:text-cyan-300 transition-colors duration-300">Understanding Artificial Intelligence - DATACAMP</p>
+                                    <p className="text-slate-300 hover:text-cyan-300 transition-colors duration-300">🏅 Understanding Artificial Intelligence — DATACAMP</p>
                                 </div>
                                 <div className="glass-effect p-5 rounded-xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] transform hover:scale-105">
-                                    <p className="text-slate-300 hover:text-cyan-300 transition-colors duration-300">Intro to Machine Learning - KAGGLE</p>
+                                    <p className="text-slate-300 hover:text-cyan-300 transition-colors duration-300">🏅 Intro to Machine Learning — KAGGLE</p>
                                 </div>
                             </div>
                         </div>
@@ -702,7 +707,7 @@ function App() {
 
             <footer className="relative z-10 bg-slate-900/50 backdrop-blur-sm border-t border-cyan-500/20 py-8">
                 <div className="max-w-5xl mx-auto px-6 text-center">
-                    <p className="text-slate-400">© 2025 Zaid Ahmed. All rights reserved.</p>
+                    <p className="text-slate-400">© 2026 Zaid Ahmed. All rights reserved.</p>
                 </div>
             </footer>
         </div>
