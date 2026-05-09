@@ -537,7 +537,7 @@ function App() {
                                 <ul className="space-y-2 text-slate-300">
                                     <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Python</li>
                                     <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">JavaScript</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">NEST JS</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">TypeScript</li>
                                 </ul>
                             </div>
                             <div className="glass-effect p-6 rounded-2xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] group">
@@ -546,11 +546,15 @@ function App() {
                                     Web Technologies
                                 </h4>
                                 <ul className="space-y-2 text-slate-300">
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">HTML & CSS</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">HTML5 & CSS3</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Angular</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">React</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Fast API | Rest API</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Next.Js | Node.Js</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Nest JS</li>
 
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Flask & Django</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Tkinter</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Angular Js</li>
+
+
                                 </ul>
                             </div>
                             <div className="glass-effect p-6 rounded-2xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] group">
@@ -564,6 +568,8 @@ function App() {
                                     <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">NLP</li>
                                     <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Computer Vision</li>
                                     <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Swarm Intelligence</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Yolo </li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">DQN</li>
                                 </ul>
                             </div>
                             <div className="glass-effect p-6 rounded-2xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] group">
@@ -573,9 +579,12 @@ function App() {
                                 </h4>
                                 <ul className="space-y-2 text-slate-300">
                                     <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Git & GitHub</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Data Science</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Machine Learning</li>
-                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">SQL</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Docker</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Supabase</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Firebase</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Streamlit</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">Jupyter Notebook</li>
+                                    <li className="hover:text-cyan-400 transition-colors duration-300 cursor-default">PostgreSQL / SQL</li>
                                 </ul>
                             </div>
                         </div>
