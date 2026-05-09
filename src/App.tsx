@@ -212,6 +212,52 @@ function App() {
                     <div className="max-w-5xl mx-auto px-6">
                         <h3 className="text-5xl font-serif gradient-text mb-16 text-center font-bold">Experience</h3>
                         <div className="space-y-8">
+
+                            <div className="glass-effect p-8 rounded-2xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(34,211,238,0.3)]">
+                                <div className="flex justify-between items-start mb-4">
+                                    <div>
+                                        <h4 className="text-2xl font-semibold text-white mb-2">Software Developer</h4>
+                                        <p className="text-cyan-400">MISL</p>
+                                    </div>
+                                    <span className="text-slate-400 text-sm bg-slate-800/50 px-4 py-2 rounded-full">Feeb 2026 - Present</span>
+                                </div>
+                                <ul className="space-y-3 text-slate-300">
+                                    <li className="flex gap-3 hover:text-cyan-300 transition-colors duration-300">
+                                        <span className="text-cyan-400 font-bold">•</span>
+                                        Leading and managing full-stack web development projects, including end-to-end website design, deployment, and scalable web solution development.
+                                    </li>
+                                    <li className="flex gap-3 hover:text-cyan-300 transition-colors duration-300">
+                                        <span className="text-cyan-400 font-bold">•</span>
+                                        Designing and optimizing SCM (Supply Chain Management) and MRP (Manufacturing Resource Planning) systems to streamline business operations and improve efficiency.
+                                    </li>
+                                    <li className="flex gap-3 hover:text-cyan-300 transition-colors duration-300">
+                                        <span className="text-cyan-400 font-bold">•</span>
+                                        Developing AI-based applications including chatbot and ANPR systems for automated communication and License Plate Recognition using computer vision.
+                                    </li>
+                                    <li className="flex gap-3 hover:text-cyan-300 transition-colors duration-300">
+                                        <span className="text-cyan-400 font-bold">•</span>
+                                        Collaborating with cross-functional teams to deliver secure, high-performance, and production-ready applications.
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div className="glass-effect p-8 rounded-2xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(34,211,238,0.3)]">
+                                <div className="flex justify-between items-start mb-4">
+                                    <div>
+                                        <h4 className="text-2xl font-semibold text-white mb-2">Full Stack Developer</h4>
+                                        <p className="text-cyan-400">ERP WALLET</p>
+                                    </div>
+                                    <span className="text-slate-400 text-sm bg-slate-800/50 px-4 py-2 rounded-full">Aug 2025 - Oct 2025</span>
+                                </div>
+                                <ul className="space-y-3 text-slate-300">
+                                    <li className="flex gap-3 hover:text-cyan-300 transition-colors duration-300"><span className="text-cyan-400 font-bold">•</span> Developed modular Angular components and integrated NestJS APIs with secure JWT authentication for real-time data management.</li>
+                                    <li className="flex gap-3 hover:text-cyan-300 transition-colors duration-300"><span className="text-cyan-400 font-bold">•</span> Implemented server-side search, filtering, and pagination to optimize performance and scalability.</li>
+                                    <li className="flex gap-3 hover:text-cyan-300 transition-colors duration-300"><span className="text-cyan-400 font-bold">•</span> Enhanced UI/UX with responsive layouts, reusable designs, and interactive data views for smooth user experience.</li>
+                                </ul>
+                            </div>
+
+
                             <div className="glass-effect p-8 rounded-2xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(34,211,238,0.3)]">
                                 <div className="flex justify-between items-start mb-4">
                                     <div>
@@ -253,21 +299,6 @@ function App() {
                                     <li className="flex gap-3 hover:text-cyan-300 transition-colors duration-300"><span className="text-cyan-400 font-bold">•</span> Developed scalable and accurate predictive models using Python and TensorFlow</li>
                                     <li className="flex gap-3 hover:text-cyan-300 transition-colors duration-300"><span className="text-cyan-400 font-bold">•</span> Tuned and optimized ML models for high performance, improving accuracy and reliability</li>
                                     <li className="flex gap-3 hover:text-cyan-300 transition-colors duration-300"><span className="text-cyan-400 font-bold">•</span> Gained hands-on experience with supervised learning and data preprocessing pipelines</li>
-                                </ul>
-                            </div>
-
-                            <div className="glass-effect p-8 rounded-2xl border border-cyan-500/20 hover:border-cyan-500/40 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(34,211,238,0.3)]">
-                                <div className="flex justify-between items-start mb-4">
-                                    <div>
-                                        <h4 className="text-2xl font-semibold text-white mb-2">Full Stack Developer</h4>
-                                        <p className="text-cyan-400">ERP WALLET</p>
-                                    </div>
-                                    <span className="text-slate-400 text-sm bg-slate-800/50 px-4 py-2 rounded-full">Aug 2025 - Oct 2025</span>
-                                </div>
-                                <ul className="space-y-3 text-slate-300">
-                                    <li className="flex gap-3 hover:text-cyan-300 transition-colors duration-300"><span className="text-cyan-400 font-bold">•</span> Developed modular Angular components and integrated NestJS APIs with secure JWT authentication for real-time data management.</li>
-                                    <li className="flex gap-3 hover:text-cyan-300 transition-colors duration-300"><span className="text-cyan-400 font-bold">•</span> Implemented server-side search, filtering, and pagination to optimize performance and scalability.</li>
-                                    <li className="flex gap-3 hover:text-cyan-300 transition-colors duration-300"><span className="text-cyan-400 font-bold">•</span> Enhanced UI/UX with responsive layouts, reusable designs, and interactive data views for smooth user experience.</li>
                                 </ul>
                             </div>
                         </div>
